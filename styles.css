@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #212429;
+}
+.navigation,
+.footer {
+  font-size: 16px;
+}
+.titulo,
+.precio {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.titulo {
+  font-size: 32px;
+  margin-left: 60px;
+}
+.container div {
+  font-size: 14px;
+  overflow-x: hidden;
+}
+.container p {
+  margin-top: 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.navigation,
+.navigation li {
+  display: inline-flex;
+}
+.navigation a {
+  padding: 0.5rem 1rem;
+}
+.navigation {
+  margin-bottom: 20px;
+}
+.nav1 {
+  margin-left: 80px;
+}
+.nav4 {
+  margin-right: 80px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.5px 0.5px #212429;
+  padding: 25px;
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+.iconNav {
+  margin-left: 20px;
+}
+
+.data {
+  padding: 0 30px 10px 30px;
+}
+
+.descripcion {
+  padding: 20px;
+}
+.prenda {
+  margin-right: 7rem;
+}
+.data img {
+  border-radius: 1rem;
+}
+.imgPrenda:hover {
+  box-shadow: 0 0 8px 8px #aab4b7;
+  background-color: #212429;
+}
+.elementos {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.footer {
+  background-color: #212429;
+  padding: 17px 40px 17px 40px;
+}
+.footer span {
+  color: #ffffff;
+}
+.footer img {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+.nav1:hover,
+.nav2:hover,
+.nav3:hover,
+.nav4:hover {
+  background-color: #212429;
+  color: #ffffff;
+}
+.footer li {
+  display: flex;
+  padding-top: 35px;
+}
+
+@media only screen and (max-width: 920px) {
+  .nav1,
+  .nav2,
+  .nav3,
+  .nav4,
+  .icons {
+    display: none;
+  }
+  .navigation div {
+    margin: 0 auto;
+  }
+  .footer span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+  .footer li {
+    padding-bottom: 15px;
+    justify-content: left;
+  }
+}
+
+@media only screen and (min-width: 921px) {
+  .elementos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2;
+  }
+  .footer ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  hr {
+    display: none;
+  }
+}
